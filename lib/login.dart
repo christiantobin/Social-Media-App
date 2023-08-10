@@ -30,9 +30,8 @@ class LoginPage extends StatelessWidget {
                 String username = usernameController.text;
                 String password = passwordController.text;
                 if (username == 'tobin' && password == 'tobin') {
-                  ScaffoldMessenger.of(context).showSnackBar(
-                    SnackBar(content: Text('Nice')),
-                  );
+                  Navigator.pushNamed(
+                      context, '/home'); // Navigate to the home page
                 } else {
                   ScaffoldMessenger.of(context).showSnackBar(
                     SnackBar(content: Text('False: $password')),
