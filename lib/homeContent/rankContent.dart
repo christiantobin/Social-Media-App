@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'rankDetails/detailedViewPage.dart';
+import 'detailedViewPage.dart';
 
 class RankContent extends StatelessWidget {
   @override
@@ -22,7 +22,7 @@ class RankContent extends StatelessWidget {
             child: Text((index + 1).toString()),
           ),
           title: Text('User ${index + 1}'),
-          subtitle: Text('Score: ${(index + 1) * 100}'),
+          subtitle: Text('Score: ${(5 - index) * 100}'),
         );
       },
     );
