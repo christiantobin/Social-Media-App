@@ -4,6 +4,7 @@ class ProfileContent extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(children: [
+      Padding(padding: const EdgeInsets.all(15)),
       Center(
         child: Text('This is the Profile Content'),
       ),
