@@ -19,10 +19,9 @@ class _HomeContentState extends State<HomeContent> {
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            _buildScaleButton('Today'),
+            _buildScaleButton('Day'),
             _buildScaleButton('Week'),
             _buildScaleButton('Month'),
-            _buildScaleButton('YTD'),
           ],
         ),
         SizedBox(height: 16),

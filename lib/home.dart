@@ -17,6 +17,7 @@ class _HomePageState extends State<HomePage> {
     // List of pages/screens to display in the bottom navigation bar
     HomeContent(), // Replace with your actual pages
     ExploreContent(),
+    Placeholder(),
     ProfileContent(),
   ];
 
@@ -30,10 +31,11 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Home Page'),
+        title: Text('RankD'),
       ),
       body: _pages[_selectedIndex], // Display the selected page
       bottomNavigationBar: BottomNavigationBar(
+        type: BottomNavigationBarType.fixed,
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
@@ -43,6 +45,8 @@ class _HomePageState extends State<HomePage> {
             icon: Icon(Icons.search),
             label: 'Explore',
           ),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.list_rounded), label: 'Rankings'),
           BottomNavigationBarItem(
             icon: Icon(Icons.person),
             label: 'Profile',

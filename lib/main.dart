@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Login Screen',
       theme: ThemeData(primarySwatch: Colors.blue),
-      initialRoute: '/home', // Or the initial route you want to start with
+      initialRoute: '/', // Or the initial route you want to start with
       routes: routes,
     );
   }
