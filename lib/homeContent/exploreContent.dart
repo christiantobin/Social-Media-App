@@ -2,6 +2,8 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 
+import 'rankDetails/detailedViewPage.dart';
+
 class ExploreContent extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -18,18 +20,28 @@ class ExploreContent extends StatelessWidget {
           ),
         ),
         Expanded(
-          child: GridView.builder(
-            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-              crossAxisCount: 3, // Number of columns
-            ),
-            itemCount: 12, // Replace with actual item count
-            itemBuilder: (context, index) {
-              return Container(
-                color: _getRandomColor(), // Use a random color for each item
-              );
-            },
+            child: GridView.builder(
+          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+            crossAxisCount: 3,
           ),
-        ),
+          itemCount: 10,
+          itemBuilder: (context, index) {
+            return GestureDetector(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) =>
+                        DetailedViewPage(), // Navigate to DetailedViewPage
+                  ),
+                );
+              },
+              child: Container(
+                color: _getRandomColor(),
+              ),
+            );
+          },
+        ))
       ],
     );
   }
