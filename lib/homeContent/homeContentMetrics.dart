@@ -9,6 +9,7 @@ class HomeMetrics extends StatelessWidget {
   Widget build(BuildContext context) {
     // Implement metrics based on the selectedScale
     // You can use Card, ListTile, or other widgets to display metrics
-    return Text('Metrics for $selectedScale');
+    String lower = this.selectedScale.toLowerCase();
+    return Text('Metrics for the $lower');
   }
 }
