@@ -1,3 +1,6 @@
+import 'package:app1/homeContent/exploreContent.dart';
+import 'package:app1/homeContent/homeContent.dart';
+import 'package:app1/homeContent/profileContent.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -12,9 +15,9 @@ class _HomePageState extends State<HomePage> {
 
   final List<Widget> _pages = [
     // List of pages/screens to display in the bottom navigation bar
-    Placeholder(), // Replace with your actual pages
-    Placeholder(),
-    Placeholder(),
+    HomeContent(), // Replace with your actual pages
+    ExploreContent(),
+    ProfileContent(),
   ];
 
   void _onItemTapped(int index) {
