@@ -1,4 +1,4 @@
-# app1
+# Socail Media App
 
 A new Flutter project.
 
