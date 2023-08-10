@@ -40,7 +40,8 @@ class _HomeContentState extends State<HomeContent> {
           });
         },
         style: ElevatedButton.styleFrom(
-          backgroundColor: _selectedScale == scale ? Colors.blue : Colors.grey,
+          backgroundColor:
+              _selectedScale == scale ? Colors.deepOrange : Colors.grey,
         ),
         child: Text(scale),
       ),

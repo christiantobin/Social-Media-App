@@ -2,7 +2,7 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 
-import 'rankDetails/detailedViewPage.dart';
+import 'detailedViewPage.dart';
 
 class ExploreContent extends StatelessWidget {
   @override
@@ -24,7 +24,7 @@ class ExploreContent extends StatelessWidget {
           gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
             crossAxisCount: 3,
           ),
-          itemCount: 10,
+          itemCount: 15,
           itemBuilder: (context, index) {
             return GestureDetector(
               onTap: () {
